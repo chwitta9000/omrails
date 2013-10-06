@@ -136,7 +136,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  aws-sdk (~> 1.20.0)
+  aws-sdk
   bootstrap-sass (~> 2.3.2.1)
   coffee-rails (~> 3.2.1)
   devise
