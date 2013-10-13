@@ -6,7 +6,7 @@ class PinsController < ApplicationController
   # GET /pins.json
   def index
     #To only show your own pins replace this Pin. with current_user.pins.
-    @pins = Pin.order("created_at desc")
+    @pins = Pin.order("created_at desc").page(params[:page]).per_page(20)
 
     # will allow us to access these action in json format
     # like creating an api for you
