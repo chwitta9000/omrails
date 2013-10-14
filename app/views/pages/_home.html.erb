@@ -1,15 +1,13 @@
 <% if user_signed_in? %>
 <% else %>
 	<div class="hero-unit">
-	<h1>Chicago Bucket List</h1>
+	<h1>Windy City Bucket List</h1>
 	<p>
-		Create your Windy City Bucket List - and then actually use it...
+		<br> Create your Windy City Bucket List - and then actually use it...<br>
+		Not ready yet? Get insprised by others' pins below! 
 	</p>
 	<p>
-		Not ready yet? Get insprised by others' pins below!
-	</p>
-	<p>
-		<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+		<br> <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
 	</p>
 	</div>
 <% end %>
